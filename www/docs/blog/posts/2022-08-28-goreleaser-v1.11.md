@@ -52,4 +52,4 @@ data to back it up — except my memory.
 - GoReleaser now has a [LinkedIn page](https://www.linkedin.com/company/goreleaser/);
 - We eventually discuss new features in our Discord server. [Join the conversation](https://discord.gg/RGEBtg8vQ6)!
 - nFPM had new releases as well, [check it out](https://github.com/goreleaser/nfpm/releases).
-- GoReleaser Pro now has [nightly releases](https://github.com/goreleaser/goreleaser-pro/releases/tag/nightly);
+- GoReleaser Pro now has [nightly releases](https://github.com/weyfonk/goreleaser-pro/releases/tag/nightly);

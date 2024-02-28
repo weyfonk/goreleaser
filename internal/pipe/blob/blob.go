@@ -4,11 +4,11 @@ package blob
 import (
 	"fmt"
 
-	"github.com/goreleaser/goreleaser/internal/deprecate"
-	"github.com/goreleaser/goreleaser/internal/pipe"
-	"github.com/goreleaser/goreleaser/internal/semerrgroup"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/deprecate"
+	"github.com/weyfonk/goreleaser/internal/pipe"
+	"github.com/weyfonk/goreleaser/internal/semerrgroup"
+	"github.com/weyfonk/goreleaser/internal/tmpl"
+	"github.com/weyfonk/goreleaser/pkg/context"
 )
 
 // Pipe for blobs.

@@ -14,7 +14,7 @@ one day, paying the bills.
 
 ### High-tier sponsors:
 
-<a href="https://smallstep.com" target="_blank"><img width="200" src="https://github.com/goreleaser/goreleaser/assets/245435/05ade839-6652-474a-af90-da3ea67dde24"></a>
+<a href="https://smallstep.com" target="_blank"><img width="200" src="https://github.com/weyfonk/goreleaser/assets/245435/05ade839-6652-474a-af90-da3ea67dde24"></a>
 
 ### Add yourself or your company to the list
 

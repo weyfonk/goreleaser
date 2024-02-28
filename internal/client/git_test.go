@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/charmbracelet/keygen"
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/testlib"
-	"github.com/goreleaser/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/internal/testlib"
+	"github.com/weyfonk/goreleaser/pkg/config"
 	"github.com/stretchr/testify/require"
 )
 
@@ -296,7 +296,7 @@ func TestKeyPath(t *testing.T) {
 
 func TestRepoFromURL(t *testing.T) {
 	for k, v := range map[string]string{
-		"goreleaser": "git@github.com:goreleaser/goreleaser.git",
+		"goreleaser": "git@github.com:weyfonk/goreleaser.git",
 		"nfpm":       "https://github.com/goreleaser/nfpm",
 		"test":       "https://myserver.git/foo/test.git",
 	} {

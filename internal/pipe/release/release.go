@@ -8,19 +8,19 @@ import (
 	"time"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/client"
-	"github.com/goreleaser/goreleaser/internal/extrafiles"
-	"github.com/goreleaser/goreleaser/internal/git"
-	"github.com/goreleaser/goreleaser/internal/pipe"
-	"github.com/goreleaser/goreleaser/internal/semerrgroup"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/artifact"
+	"github.com/weyfonk/goreleaser/internal/client"
+	"github.com/weyfonk/goreleaser/internal/extrafiles"
+	"github.com/weyfonk/goreleaser/internal/git"
+	"github.com/weyfonk/goreleaser/internal/pipe"
+	"github.com/weyfonk/goreleaser/internal/semerrgroup"
+	"github.com/weyfonk/goreleaser/internal/tmpl"
+	"github.com/weyfonk/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/pkg/context"
 )
 
 // ErrMultipleReleases indicates that multiple releases are defined. ATM only one of them is allowed.
-// See https://github.com/goreleaser/goreleaser/pull/809
+// See https://github.com/weyfonk/goreleaser/pull/809
 var ErrMultipleReleases = errors.New("multiple releases are defined. Only one is allowed")
 
 // Pipe for github release.

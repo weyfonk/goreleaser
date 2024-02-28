@@ -25,7 +25,7 @@ Other things you might need to run the tests:
 Clone `goreleaser` anywhere:
 
 ```sh
-git clone git@github.com:goreleaser/goreleaser.git
+git clone git@github.com:weyfonk/goreleaser.git
 ```
 
 `cd` into the directory and install the dependencies:

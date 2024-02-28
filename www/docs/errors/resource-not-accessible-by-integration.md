@@ -27,7 +27,7 @@ You'll need to add it as secret and pass it to the action, for instance:
 ```yaml
 # .github/workflows/goreleaser.yaml
 # ...
-      - uses: goreleaser/goreleaser-action@v4
+      - uses: weyfonk/goreleaser-action@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 # ...
@@ -44,7 +44,7 @@ We would need to change the workflow file:
 ```yaml
 # .github/workflows/goreleaser.yaml
 # ...
-      - uses: goreleaser/goreleaser-action@v4
+      - uses: weyfonk/goreleaser-action@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAP_GITHUB_TOKEN: ${{ secrets.TAP_GITHUB_TOKEN }}

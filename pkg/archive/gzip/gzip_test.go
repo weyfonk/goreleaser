@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/pkg/config"
 	"github.com/stretchr/testify/require"
 )
 

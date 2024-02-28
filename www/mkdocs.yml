@@ -2,8 +2,8 @@ site_name: GoReleaser
 site_url: https://goreleaser.com
 site_description: Deliver Go binaries as fast and easily as possible
 copyright: Made with ❤️ by GoReleaser contributors.
-repo_name: goreleaser/goreleaser
-repo_url: https://github.com/goreleaser/goreleaser
+repo_name: weyfonk/goreleaser
+repo_url: https://github.com/weyfonk/goreleaser
 edit_uri: edit/main/www/docs/
 
 theme:

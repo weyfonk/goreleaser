@@ -2,7 +2,7 @@
 
 Codefresh uses Docker based pipelines where all steps must be Docker containers.
 Using GoReleaser is very easy via the
-[existing Docker image](https://hub.docker.com/r/goreleaser/goreleaser/).
+[existing Docker image](https://hub.docker.com/r/weyfonk/goreleaser/).
 
 Here is an example pipeline that builds a Go application and then uses
 GoReleaser.
@@ -29,7 +29,7 @@ steps:
   ReleaseMyApp:
     title: Creating packages
     stage: release
-    image: 'goreleaser/goreleaser'
+    image: 'weyfonk/goreleaser'
     commands:
       - goreleaser release --clean
 ```

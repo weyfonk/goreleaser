@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/pipe"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/pipe"
+	"github.com/weyfonk/goreleaser/pkg/context"
 	"github.com/hashicorp/go-multierror"
 	"github.com/stretchr/testify/require"
 )

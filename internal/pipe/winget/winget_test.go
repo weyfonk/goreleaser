@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/client"
-	"github.com/goreleaser/goreleaser/internal/golden"
-	"github.com/goreleaser/goreleaser/internal/skips"
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/internal/artifact"
+	"github.com/weyfonk/goreleaser/internal/client"
+	"github.com/weyfonk/goreleaser/internal/golden"
+	"github.com/weyfonk/goreleaser/internal/skips"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/pkg/config"
 	"github.com/stretchr/testify/require"
 )
 
@@ -105,7 +105,7 @@ func TestRunPipe(t *testing.T) {
 				Homepage:        "https://goreleaser.com",
 				License:         "MIT",
 				LicenseURL:      "https://goreleaser.com/eula/",
-				ReleaseNotesURL: "https://github.com/goreleaser/goreleaser/tags/{{.Tag}}",
+				ReleaseNotesURL: "https://github.com/weyfonk/goreleaser/tags/{{.Tag}}",
 				ReleaseNotes:    "{{.Changelog}}",
 				Tags:            []string{"foo", "bar"},
 			},
@@ -141,7 +141,7 @@ func TestRunPipe(t *testing.T) {
 				Homepage:         "https://goreleaser.com",
 				License:          "mit",
 				LicenseURL:       "https://goreleaser.com/license",
-				ReleaseNotesURL:  "https://github.com/goreleaser/goreleaser/tags/{{.Tag}}",
+				ReleaseNotesURL:  "https://github.com/weyfonk/goreleaser/tags/{{.Tag}}",
 				ShortDescription: "foo bar zaz",
 				Repository: config.RepoRef{
 					Owner: "foo",

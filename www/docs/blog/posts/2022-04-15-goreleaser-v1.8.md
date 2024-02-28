@@ -15,13 +15,13 @@ This release's biggest feature is the `GOAMD64` support.
 
 ## **Highlights**
 
-- support `GOAMD64`([#3016](https://github.com/goreleaser/goreleaser/pull/3016))
-- upgraded from `yaml.v2` to `yaml.v3`([#3004](https://github.com/goreleaser/goreleaser/pull/3004))
-- deprecate gofish ([#2999](https://github.com/goreleaser/goreleaser/pull/2999))
-- added Slack notification options ([#2988](https://github.com/goreleaser/goreleaser/pull/2988))
+- support `GOAMD64`([#3016](https://github.com/weyfonk/goreleaser/pull/3016))
+- upgraded from `yaml.v2` to `yaml.v3`([#3004](https://github.com/weyfonk/goreleaser/pull/3004))
+- deprecate gofish ([#2999](https://github.com/weyfonk/goreleaser/pull/2999))
+- added Slack notification options ([#2988](https://github.com/weyfonk/goreleaser/pull/2988))
 - a lot of bug fixes and docs improvements
 
-You can see the full changelog [here](https://github.com/goreleaser/goreleaser/releases/tag/v1.8.0).
+You can see the full changelog [here](https://github.com/weyfonk/goreleaser/releases/tag/v1.8.0).
 
 ## **Other news**
 

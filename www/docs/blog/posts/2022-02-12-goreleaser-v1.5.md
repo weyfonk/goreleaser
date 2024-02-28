@@ -26,7 +26,7 @@ GoReleaser 1.5 is out, with a handful of miscellaneous improvements.
 - You can now override build `tags`, `ldflags`, `gcflags` and `asmflags` per target platform;
 - On a similar note, you can get the runtime `GOOS` and `GOARCH` on template variables using `{{ .Runtime.Goos }}` and `{{ .Runtime.Goarch }}`.
 
-You can see the full changelog [here](https://github.com/goreleaser/goreleaser/releases/tag/v1.5.0).
+You can see the full changelog [here](https://github.com/weyfonk/goreleaser/releases/tag/v1.5.0).
 
 ## **Other news**
 

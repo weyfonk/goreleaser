@@ -70,7 +70,7 @@ sboms:
     artifacts: source
 ```
 
-When you do not specify any command, it will use syftas a command by default, as you can see [here](https://github.com/goreleaser/goreleaser/blob/7671dab291483b2733e871abff379d07e74dfc6c/internal/pipe/sbom/sbom.go#L64-L73).
+When you do not specify any command, it will use syftas a command by default, as you can see [here](https://github.com/weyfonk/goreleaser/blob/7671dab291483b2733e871abff379d07e74dfc6c/internal/pipe/sbom/sbom.go#L64-L73).
 
 GoReleaser lets you cross-compile your Go binaries and package them in various formats, including container images or tarballs.
 Then, using some public services such as GitHub Releases and DockerHub to distribute them to customers or production systems

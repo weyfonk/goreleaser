@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/skips"
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/skips"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/pkg/context"
 	"github.com/stretchr/testify/require"
 )
 

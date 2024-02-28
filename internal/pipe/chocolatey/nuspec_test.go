@@ -3,7 +3,7 @@ package chocolatey
 import (
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/golden"
+	"github.com/weyfonk/goreleaser/internal/golden"
 	"github.com/stretchr/testify/require"
 )
 
@@ -13,18 +13,18 @@ func TestNuspecBytes(t *testing.T) {
 		Metadata: Metadata{
 			ID:                       "goreleaser",
 			Version:                  "1.12.3",
-			PackageSourceURL:         "https://github.com/goreleaser/goreleaser",
+			PackageSourceURL:         "https://github.com/weyfonk/goreleaser",
 			Owners:                   "caarlos0",
 			Title:                    "GoReleaser",
 			Authors:                  "caarlos0",
 			ProjectURL:               "https://goreleaser.com/",
-			IconURL:                  "https://raw.githubusercontent.com/goreleaser/goreleaser/main/www/docs/static/avatar.png",
+			IconURL:                  "https://raw.githubusercontent.com/weyfonk/goreleaser/main/www/docs/static/avatar.png",
 			Copyright:                "2016-2022 Carlos Alexandro Becker",
-			LicenseURL:               "https://github.com/goreleaser/goreleaser/blob/main/LICENSE.md",
+			LicenseURL:               "https://github.com/weyfonk/goreleaser/blob/main/LICENSE.md",
 			RequireLicenseAcceptance: true,
-			ProjectSourceURL:         "https://github.com/goreleaser/goreleaser",
-			DocsURL:                  "https://github.com/goreleaser/goreleaser/blob/main/README.md",
-			BugTrackerURL:            "https://github.com/goreleaser/goreleaser/issues",
+			ProjectSourceURL:         "https://github.com/weyfonk/goreleaser",
+			DocsURL:                  "https://github.com/weyfonk/goreleaser/blob/main/README.md",
+			BugTrackerURL:            "https://github.com/weyfonk/goreleaser/issues",
 			Tags:                     "go docker homebrew golang package",
 			Summary:                  "Deliver Go binaries as fast and easily as possible",
 			Description:              "GoReleaser builds Go binaries for several platforms, creates a GitHub release and then pushes a Homebrew formula to a tap repository. All that wrapped in your favorite CI.",

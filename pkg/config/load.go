@@ -5,8 +5,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/goreleaser/goreleaser/internal/logext"
-	"github.com/goreleaser/goreleaser/internal/yaml"
+	"github.com/weyfonk/goreleaser/internal/logext"
+	"github.com/weyfonk/goreleaser/internal/yaml"
 )
 
 // VersionError will happen if the goreleaser config file version does not

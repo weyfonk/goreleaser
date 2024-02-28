@@ -35,13 +35,13 @@ You can [install][] the same way you always do, and you can see the full release
 notes [here][oss-rel] and [here (for Pro)][pro-rel].
 
 [install]: https://goreleaser.com/install
-[pro-rel]: https://github.com/goreleaser/goreleaser-pro/releases/tag/v1.15.0-pro
-[oss-rel]: https://github.com/goreleaser/goreleaser/releases/tag/v1.15.0
+[pro-rel]: https://github.com/weyfonk/goreleaser-pro/releases/tag/v1.15.0-pro
+[oss-rel]: https://github.com/weyfonk/goreleaser/releases/tag/v1.15.0
 
 #### GitHub Action incident
 
 Last Friday (Jan 27th), we had a rather big
-[incident](https://github.com/goreleaser/goreleaser-action/pull/389) due to a
+[incident](https://github.com/weyfonk/goreleaser-action/pull/389) due to a
 GitHub website change. We were using a URL to get the release that was not in
 the API domain, but was working well for a couple of years. GitHub changed it,
 and we, as well as many other projects, got an incident in our hands. This is
@@ -52,7 +52,7 @@ served by our website instead of GitHub’s API, which also avoids rate limits a
 issues with GHE users. I also wanna give huge props to
 [@crazy-max](https://github.com/crazy-max) for working hard on all that, as well
 as everyone who helped debug and test everything on
-[#389](https://github.com/goreleaser/goreleaser-action/pull/389).
+[#389](https://github.com/weyfonk/goreleaser-action/pull/389).
 
 ### Other news
 

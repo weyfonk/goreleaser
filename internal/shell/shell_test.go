@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/shell"
-	"github.com/goreleaser/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/internal/shell"
+	"github.com/weyfonk/goreleaser/internal/testctx"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,11 +6,11 @@ IgnoreURLs:
   - https://twitter.com/goreleaser
   - support.discord.com
   - microsoft.com
-  - https://github.com/goreleaser/goreleaser/edit/
+  - https://github.com/weyfonk/goreleaser/edit/
   - https://discord.com/
   - https://gofi.sh
   - https://docs.mattermost.com
-  - https://github.com/goreleaser/goreleaser/pkgs
+  - https://github.com/weyfonk/goreleaser/pkgs
   - https://iron.security
   - https://marketplace.visualstudio.com
   - linkedin.com

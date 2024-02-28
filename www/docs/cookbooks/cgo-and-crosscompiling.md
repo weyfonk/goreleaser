@@ -2,10 +2,10 @@
 
 The best option to cross-compile Go project with CGO dependencies would be in
 using Docker image.
-[This project](https://github.com/goreleaser/goreleaser-cross) provides the
-[Docker images](https://hub.docker.com/repository/docker/goreleaser/goreleaser-cross)
+[This project](https://github.com/weyfonk/goreleaser-cross) provides the
+[Docker images](https://hub.docker.com/repository/docker/weyfonk/goreleaser-cross)
 with a bunch of ready-to-use cross-compilers as well as how-to make a `sysroot`.
-All that wrapped into [this example](https://github.com/goreleaser/goreleaser-cross-example)
+All that wrapped into [this example](https://github.com/weyfonk/goreleaser-cross-example)
 
 If you have [GoReleaser Pro](/pro), you can also use the split and merge feature
 to build for each platform natively and merge the builds later.

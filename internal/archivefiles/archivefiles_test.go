@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/testlib"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/internal/testlib"
+	"github.com/weyfonk/goreleaser/internal/tmpl"
+	"github.com/weyfonk/goreleaser/pkg/config"
 	"github.com/stretchr/testify/require"
 )
 

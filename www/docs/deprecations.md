@@ -392,7 +392,7 @@ it.
 For now, if you want to keep the old behavior, no action is required, but it
 would be nice to have your opinion [here][rlcp-discuss].
 
-[rlcp-discuss]: https://github.com/goreleaser/goreleaser/discussions/3659
+[rlcp-discuss]: https://github.com/weyfonk/goreleaser/discussions/3659
 
 If you want to make sure your releases will keep working properly, you can
 enable this option and test it out with
@@ -710,7 +710,7 @@ If you try to use new versions of GoReleaser with Go 1.15 or older, it will warn
 > since 2021-02-28 (v0.158.0), removed 2021-09-22 (v0.180.0)
 
 GoReleaser skips SemVer validations when run with `--skip-validation` or `--snapshot`.
-This causes other problems later, such as [invalid Linux packages](https://github.com/goreleaser/goreleaser/issues/2081).
+This causes other problems later, such as [invalid Linux packages](https://github.com/weyfonk/goreleaser/issues/2081).
 Because of that, once this deprecation expires, GoReleaser will hard fail on non-semver versions, as stated on our [limitations page](https://goreleaser.com/limitations/semver/).
 
 ### docker.builds

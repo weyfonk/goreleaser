@@ -27,7 +27,7 @@ steps:
       - go test -race -v ./... -cover
 
   - name: release
-    image: goreleaser/goreleaser
+    image: weyfonk/goreleaser
     environment:
       GITHUB_TOKEN:
         from_secret: github_token
@@ -67,7 +67,7 @@ steps:
       - go test -race -v ./... -cover
 
   - name: release
-    image: goreleaser/goreleaser
+    image: weyfonk/goreleaser
     environment:
       GITHUB_TOKEN:
         from_secret: github_token

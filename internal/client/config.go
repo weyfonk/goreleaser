@@ -1,6 +1,6 @@
 package client
 
-import "github.com/goreleaser/goreleaser/pkg/config"
+import "github.com/weyfonk/goreleaser/pkg/config"
 
 // RepoFromRef converts a config.RepoRef into a Repo.
 func RepoFromRef(ref config.RepoRef) Repo {

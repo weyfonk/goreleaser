@@ -47,7 +47,7 @@ It somewhat works, but there are many rough edges, and potentially some bugs
 here and there.
 
 To make Windows a first-class runtime for GoReleaser,
-[I started trying to make CI pass on Windows](https://github.com/goreleaser/goreleaser/pull/4293).
+[I started trying to make CI pass on Windows](https://github.com/weyfonk/goreleaser/pull/4293).
 It's a bit hard to evolve it as I don't really use Windows, and end up having
 to juggle around VMs and/or CI.
 
@@ -64,7 +64,7 @@ You can read the announcement [here](./2023-09-14-welcome.md).
 
 It still a work in progress, though.
 You can also see the still-open issue
-[here](https://github.com/goreleaser/goreleaser/issues/3503)
+[here](https://github.com/weyfonk/goreleaser/issues/3503)
 
 The old address will still be up indefinitely, but we won't be updating it any
 longer.
@@ -91,7 +91,7 @@ You may also be interested in buying a GoReleaser Pro license.
 You can find out more [here](https://goreleaser.com/sponsors/).
 
 [install]: https://goreleaser.com/install
-[pro-rel]: https://github.com/goreleaser/goreleaser-pro/releases/tag/v1.21.0-pro
-[oss-rel]: https://github.com/goreleaser/goreleaser/releases/tag/v1.21.0
+[pro-rel]: https://github.com/weyfonk/goreleaser-pro/releases/tag/v1.21.0-pro
+[oss-rel]: https://github.com/weyfonk/goreleaser/releases/tag/v1.21.0
 [pro]: https://goreleaser.com/pro
 [discord]: https://goreleaser.com/discord

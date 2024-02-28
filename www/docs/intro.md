@@ -63,5 +63,5 @@ Hopefully you find it useful, and the docs easy to follow.
 Feel free to [create an issue][iss] if you find something that's not clear and
 join our [Discord][dis] to chat with other users and maintainers.
 
-[iss]: https://github.com/goreleaser/goreleaser/issues
+[iss]: https://github.com/weyfonk/goreleaser/issues
 [dis]: https://discord.gg/RGEBtg8vQ6

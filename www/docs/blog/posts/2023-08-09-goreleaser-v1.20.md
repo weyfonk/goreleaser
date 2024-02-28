@@ -28,7 +28,7 @@ either.
 Starting now, the Pro Nightly will be released every Wednesday, and the OSS
 every Thursday.
 
-[pro-nightly]: https://github.com/goreleaser/goreleaser-pro/releases/tag/nightly
+[pro-nightly]: https://github.com/weyfonk/goreleaser-pro/releases/tag/nightly
 
 ### GoReleaser Pro improvements
 
@@ -90,8 +90,8 @@ full release notes and download the pre-compiled binaries [here][oss-rel] and
 [here (for Pro)][pro-rel].
 
 [install]: https://goreleaser.com/install
-[pro-rel]: https://github.com/goreleaser/goreleaser-pro/releases/tag/v1.20.0-pro
-[oss-rel]: https://github.com/goreleaser/goreleaser/releases/tag/v1.20.0
+[pro-rel]: https://github.com/weyfonk/goreleaser-pro/releases/tag/v1.20.0-pro
+[oss-rel]: https://github.com/weyfonk/goreleaser/releases/tag/v1.20.0
 [pro]: https://goreleaser.com/pro
 
 ## Helping out

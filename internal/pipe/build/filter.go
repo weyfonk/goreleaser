@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/pkg/context"
 )
 
 func filter(ctx *context.Context, targets []string) []string {

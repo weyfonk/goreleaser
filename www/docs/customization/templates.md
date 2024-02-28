@@ -76,7 +76,7 @@ In fields that support templates, these fields are always available:
 ## Artifacts
 
 If you use the `.Artifacts` field, it evaluates to an
-[`artifact.Artifact` list](https://pkg.go.dev/github.com/goreleaser/goreleaser@main/internal/artifact#Artifact).
+[`artifact.Artifact` list](https://pkg.go.dev/github.com/weyfonk/goreleaser@main/internal/artifact#Artifact).
 You should be able to use all its fields on each item:
 
 - `.Name`

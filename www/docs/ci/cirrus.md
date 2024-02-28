@@ -14,7 +14,7 @@ task:
   env:
     GITHUB_TOKEN: ENCRYPTED[ABC]
   container:
-    image: goreleaser/goreleaser:latest
+    image: weyfonk/goreleaser:latest
   release_script: goreleaser
 ```
 

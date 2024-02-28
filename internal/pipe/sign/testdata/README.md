@@ -11,7 +11,7 @@ the local keyring file.
 ## 1.  Create signing keys
 
 ```sh
-cd $GOPATH/src/github.com/goreleaser/goreleaser/internal/pipeline/sign/testdata/gnupg
+cd $GOPATH/src/github.com/weyfonk/goreleaser/internal/pipeline/sign/testdata/gnupg
 gpg --homedir . --quick-generate-key --batch --passphrase '' nopass default default 10y
 ```
 

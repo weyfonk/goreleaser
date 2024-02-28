@@ -139,5 +139,5 @@ See you all soon!
 [deprecations]: ../../deprecations.md
 [dis]: https://github.com/orgs/goreleaser/discussions/4169
 [gpro]: ../../pro.md
-[gha]: https://github.com/goreleaser/goreleaser-action
+[gha]: https://github.com/weyfonk/goreleaser-action
 [Sponsors]: https://github.com/caarlos0

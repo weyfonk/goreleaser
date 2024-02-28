@@ -9,14 +9,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/client"
-	"github.com/goreleaser/goreleaser/internal/golden"
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/testlib"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/artifact"
+	"github.com/weyfonk/goreleaser/internal/client"
+	"github.com/weyfonk/goreleaser/internal/golden"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/internal/testlib"
+	"github.com/weyfonk/goreleaser/internal/tmpl"
+	"github.com/weyfonk/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/pkg/context"
 	"github.com/stretchr/testify/require"
 )
 

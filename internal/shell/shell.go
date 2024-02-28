@@ -9,9 +9,9 @@ import (
 
 	"github.com/caarlos0/log"
 	"github.com/charmbracelet/x/exp/ordered"
-	"github.com/goreleaser/goreleaser/internal/gio"
-	"github.com/goreleaser/goreleaser/internal/logext"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/gio"
+	"github.com/weyfonk/goreleaser/internal/logext"
+	"github.com/weyfonk/goreleaser/pkg/context"
 )
 
 // Run a shell command with given arguments and envs

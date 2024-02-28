@@ -43,7 +43,7 @@ jobs:
       # More assembly might be required: Docker logins, GPG, etc.
       # It all depends on your needs.
       - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v5
+        uses: weyfonk/goreleaser-action@v5
         with:
           # either 'goreleaser' (default) or 'goreleaser-pro'
           distribution: goreleaser
@@ -98,7 +98,7 @@ jobs:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
       - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v5
+        uses: weyfonk/goreleaser-action@v5
         with:
           version: latest
           args: release --clean
@@ -195,7 +195,7 @@ jobs:
     steps:
       # ...
       - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v5
+        uses: weyfonk/goreleaser-action@v5
         with:
           version: latest
           args: release --clean
@@ -217,7 +217,7 @@ You can check [this example repository](https://github.com/goreleaser/example) f
   </figure>
 </a>
 
-[goreleaser-action]: https://github.com/goreleaser/goreleaser-action
+[goreleaser-action]: https://github.com/weyfonk/goreleaser-action
 [actions]: https://github.com/features/actions
 [syntax]: https://help.github.com/en/articles/workflow-syntax-for-github-actions#About-yaml-syntax-for-workflows
 [signing]: https://goreleaser.com/customization/sign/

@@ -249,7 +249,7 @@ This would add all files matching the glob `none*`, provide that you don't
 have any files matching that glob, only the binary will be added to the
 archive.
 
-For more information, check [#602](https://github.com/goreleaser/goreleaser/issues/602)
+For more information, check [#602](https://github.com/weyfonk/goreleaser/issues/602)
 
 ## A note about Gzip
 

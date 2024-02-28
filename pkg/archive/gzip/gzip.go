@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/goreleaser/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/pkg/config"
 	gzip "github.com/klauspost/pgzip"
 )
 

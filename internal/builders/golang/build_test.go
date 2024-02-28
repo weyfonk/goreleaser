@@ -10,13 +10,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/testlib"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	api "github.com/goreleaser/goreleaser/pkg/build"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/artifact"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/internal/testlib"
+	"github.com/weyfonk/goreleaser/internal/tmpl"
+	api "github.com/weyfonk/goreleaser/pkg/build"
+	"github.com/weyfonk/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/pkg/context"
 	"github.com/stretchr/testify/require"
 )
 
@@ -808,7 +808,7 @@ func TestBuildTests(t *testing.T) {
 
 func TestRunPipeWithProxiedRepo(t *testing.T) {
 	folder := testlib.Mktmp(t)
-	out, err := exec.Command("git", "clone", "https://github.com/goreleaser/goreleaser", "-b", "v0.161.1", "--depth=1", ".").CombinedOutput()
+	out, err := exec.Command("git", "clone", "https://github.com/weyfonk/goreleaser", "-b", "v0.161.1", "--depth=1", ".").CombinedOutput()
 	require.NoError(t, err, string(out))
 
 	proxied := filepath.Join(folder, "dist/proxy/default")
@@ -818,13 +818,13 @@ func TestRunPipeWithProxiedRepo(t *testing.T) {
 		[]byte(`// +build main
 package main
 
-import _ "github.com/goreleaser/goreleaser"
+import _ "github.com/weyfonk/goreleaser"
 `),
 		0o666,
 	))
 	require.NoError(t, os.WriteFile(
 		filepath.Join(proxied, "go.mod"),
-		[]byte("module foo\nrequire github.com/goreleaser/goreleaser v0.161.1"),
+		[]byte("module foo\nrequire github.com/weyfonk/goreleaser v0.161.1"),
 		0o666,
 	))
 
@@ -839,7 +839,7 @@ import _ "github.com/goreleaser/goreleaser"
 		Builds: []config.Build{
 			{
 				Binary:        "foo",
-				Main:          "github.com/goreleaser/goreleaser",
+				Main:          "github.com/weyfonk/goreleaser",
 				Dir:           proxied,
 				UnproxiedMain: ".",
 				UnproxiedDir:  ".",

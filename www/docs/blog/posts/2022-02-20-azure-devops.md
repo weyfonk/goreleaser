@@ -60,7 +60,7 @@ And quickly change the default settings to fit with your use case!
 For example set a specific version or execute certain **GoReleaser** commands.
 
 See the official docs for more details
-[https://github.com/goreleaser/goreleaser-azure-devops-extension](https://github.com/goreleaser/goreleaser-azure-devops-extension)
+[https://github.com/weyfonk/goreleaser-azure-devops-extension](https://github.com/weyfonk/goreleaser-azure-devops-extension)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*Aqtx-0KvADotNmeX7X1HTQ.png)
 

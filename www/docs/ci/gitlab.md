@@ -38,7 +38,7 @@ stages:
 release:
   stage: release
   image:
-    name: goreleaser/goreleaser
+    name: weyfonk/goreleaser
     entrypoint: [""]
   only:
     - tags
@@ -56,7 +56,7 @@ for more information.
 
 When tags are pushed to the repository,
 an available GitLab Runner with the Docker executor will pick up the release job.
-`goreleaser/goreleaser` will start in a container, and the repository will be mounted inside.
+`weyfonk/goreleaser` will start in a container, and the repository will be mounted inside.
 Finally, the `script` section will run within the container starting in your project's directory.
 
 ## Releasing Archives and Pushing Images
@@ -105,7 +105,7 @@ release:
       -e DOCKER_REGISTRY \
       -e GITLAB_TOKEN \
       -e CI_JOB_TOKEN \
-      goreleaser/goreleaser release --clean
+      weyfonk/goreleaser release --clean
 ```
 
 In GitLab CI settings, add variables for `DOCKER_REGISTRY`, `DOCKER_USERNAME`,

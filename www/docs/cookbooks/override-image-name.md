@@ -8,10 +8,10 @@ to be mindful of that because, in this section, we'll give an example through
 GoReleaser's GitHub Action.
 
 > To get more detail about the GoReleaser's GitHub Action, please
-> [see](https://github.com/goreleaser/goreleaser-action).
+> [see](https://github.com/weyfonk/goreleaser-action).
 
 As you can see from the description
-[here](https://github.com/goreleaser/goreleaser-action#environment-variables),
+[here](https://github.com/weyfonk/goreleaser-action#environment-variables),
 you can pass environment variables to the GoReleaser to use within the
 `.goreleaser.yml` via syntax `{{ .Env.<something> }}`. So, let' define our
 registry and image names as an [environment variable in the
@@ -29,7 +29,7 @@ Action like the following:
       IMAGE_NAME: "google/addlicense"
 ...
       - name: Run GoReleaser
-        uses:  goreleaser/goreleaser-action@v4
+        uses:  weyfonk/goreleaser-action@v4
         with:
           distribution: goreleaser
           version: latest

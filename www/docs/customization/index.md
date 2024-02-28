@@ -49,13 +49,13 @@ for v1.12.0:
 === "OSS"
 
     ```sh
-    https://raw.githubusercontent.com/goreleaser/goreleaser/v1.12.0/www/docs/static/schema.json
+    https://raw.githubusercontent.com/weyfonk/goreleaser/v1.12.0/www/docs/static/schema.json
     ```
 
 === "Pro"
 
     ```sh
-    https://raw.githubusercontent.com/goreleaser/goreleaser/v1.12.0/www/docs/static/schema-pro.json
+    https://raw.githubusercontent.com/weyfonk/goreleaser/v1.12.0/www/docs/static/schema-pro.json
     ```
 
 [jsonschema]: http://json-schema.org/draft/2020-12/json-schema-validation.html

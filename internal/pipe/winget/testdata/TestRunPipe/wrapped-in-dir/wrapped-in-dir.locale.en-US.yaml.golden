@@ -11,6 +11,6 @@ LicenseUrl: https://goreleaser.com/license
 ShortDescription: foo bar zaz
 Description: my test
 Moniker: wrapped-in-dir
-ReleaseNotesUrl: https://github.com/goreleaser/goreleaser/tags/v1.2.1
+ReleaseNotesUrl: https://github.com/weyfonk/goreleaser/tags/v1.2.1
 ManifestType: defaultLocale
 ManifestVersion: 1.6.0

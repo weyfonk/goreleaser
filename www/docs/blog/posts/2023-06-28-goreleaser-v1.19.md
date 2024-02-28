@@ -23,7 +23,7 @@ Without further ado, let's dive in!
 
 We got a [CVE on nFPM](https://github.com/goreleaser/nfpm/security/advisories/GHSA-w7jw-q4fg-qc4c)
 and another one [on
-GoReleaser](https://github.com/goreleaser/goreleaser/security/advisories/GHSA-2fvp-53hw-f9fc).
+GoReleaser](https://github.com/weyfonk/goreleaser/security/advisories/GHSA-2fvp-53hw-f9fc).
 
 It is unlikely that you were affected by this, but it's worth taking a look just
 in case.
@@ -234,8 +234,8 @@ full release notes and download the pre-compiled binaries [here][oss-rel] and
 [here (for Pro)][pro-rel].
 
 [install]: https://goreleaser.com/install
-[pro-rel]: https://github.com/goreleaser/goreleaser-pro/releases/tag/v1.19.0-pro
-[oss-rel]: https://github.com/goreleaser/goreleaser/releases/tag/v1.19.0
+[pro-rel]: https://github.com/weyfonk/goreleaser-pro/releases/tag/v1.19.0-pro
+[oss-rel]: https://github.com/weyfonk/goreleaser/releases/tag/v1.19.0
 
 ## Helping out
 

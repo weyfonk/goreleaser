@@ -177,7 +177,7 @@ Once you do that, you can install the packages.
 === "OSS"
 
     ```bash
-    go install github.com/goreleaser/goreleaser@latest
+    go install github.com/weyfonk/goreleaser@latest
     ```
 
     Requires Go 1.22.
@@ -269,15 +269,15 @@ which is always the latest nightly build available.
 
     Registries:
 
-    - [`goreleaser/goreleaser`](https://hub.docker.com/r/goreleaser/goreleaser)
-    - [`ghcr.io/goreleaser/goreleaser`](https://github.com/goreleaser/goreleaser/pkgs/container/goreleaser)
+    - [`weyfonk/goreleaser`](https://hub.docker.com/r/weyfonk/goreleaser)
+    - [`ghcr.io/weyfonk/goreleaser`](https://github.com/weyfonk/goreleaser/pkgs/container/goreleaser)
 
 === "Pro"
 
     Registries:
 
-    - [`goreleaser/goreleaser-pro`](https://hub.docker.com/r/goreleaser/goreleaser-pro)
-    - [`ghcr.io/goreleaser/goreleaser-pro`](https://github.com/goreleaser/goreleaser/pkgs/container/goreleaser-pro)
+    - [`weyfonk/goreleaser-pro`](https://hub.docker.com/r/weyfonk/goreleaser-pro)
+    - [`ghcr.io/weyfonk/goreleaser-pro`](https://github.com/weyfonk/goreleaser/pkgs/container/goreleaser-pro)
 
 ## Verifying the artifacts
 
@@ -289,15 +289,15 @@ All artifacts are checksummed, and the checksum file is signed with [cosign][].
 
     1. Download the files you want, and the `checksums.txt`, `checksum.txt.pem` and `checksums.txt.sig` files from the [releases][releases] page:
       ```bash
-      wget 'https://github.com/goreleaser/goreleaser/releases/download/__VERSION__/checksums.txt'
+      wget 'https://github.com/weyfonk/goreleaser/releases/download/__VERSION__/checksums.txt'
       ```
     1. Verify the signature:
       ```bash
       cosign verify-blob \
-        --certificate-identity 'https://github.com/goreleaser/goreleaser/.github/workflows/release.yml@refs/tags/__VERSION__' \
+        --certificate-identity 'https://github.com/weyfonk/goreleaser/.github/workflows/release.yml@refs/tags/__VERSION__' \
         --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \
-        --cert 'https://github.com/goreleaser/goreleaser/releases/download/__VERSION__/checksums.txt.pem' \
-        --signature 'https://github.com/goreleaser/goreleaser/releases/download/__VERSION__/checksums.txt.sig' \
+        --cert 'https://github.com/weyfonk/goreleaser/releases/download/__VERSION__/checksums.txt.pem' \
+        --signature 'https://github.com/weyfonk/goreleaser/releases/download/__VERSION__/checksums.txt.sig' \
         ./checksums.txt
       ```
     1. If the signature is valid, you can then verify the SHA256 sums match with the downloaded binary:
@@ -309,15 +309,15 @@ All artifacts are checksummed, and the checksum file is signed with [cosign][].
 
     1. Download the files you want, and the `checksums.txt`, `checksum.txt.pem` and `checksums.txt.sig` files from the [releases][pro-releases] page:
       ```bash
-      wget 'https://github.com/goreleaser/goreleaser-pro/releases/download/__VERSION__-pro/checksums.txt'
+      wget 'https://github.com/weyfonk/goreleaser-pro/releases/download/__VERSION__-pro/checksums.txt'
       ```
     1. Verify the signature:
       ```bash
       cosign verify-blob \
-        --certificate-identity 'https://github.com/goreleaser/goreleaser-pro-internal/.github/workflows/release-pro.yml@refs/tags/__VERSION__-pro' \
+        --certificate-identity 'https://github.com/weyfonk/goreleaser-pro-internal/.github/workflows/release-pro.yml@refs/tags/__VERSION__-pro' \
         --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \
-        --cert 'https://github.com/goreleaser/goreleaser-pro/releases/download/__VERSION__-pro/checksums.txt.pem' \
-        --signature 'https://github.com/goreleaser/goreleaser-pro/releases/download/__VERSION__-pro/checksums.txt.sig' \
+        --cert 'https://github.com/weyfonk/goreleaser-pro/releases/download/__VERSION__-pro/checksums.txt.pem' \
+        --signature 'https://github.com/weyfonk/goreleaser-pro/releases/download/__VERSION__-pro/checksums.txt.sig' \
         ./checksums.txt
       ```
     1. If the signature is valid, you can then verify the SHA256 sums match with the downloaded binary:
@@ -335,18 +335,18 @@ Verify the signatures:
 
     ```bash
     cosign verify \
-      --certificate-identity 'https://github.com/goreleaser/goreleaser/.github/workflows/release.yml@refs/tags/__VERSION__' \
+      --certificate-identity 'https://github.com/weyfonk/goreleaser/.github/workflows/release.yml@refs/tags/__VERSION__' \
         --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \
-      goreleaser/goreleaser
+      weyfonk/goreleaser
     ```
 
 === "Pro"
 
     ```bash
     cosign verify \
-      --certificate-identity 'https://github.com/goreleaser/goreleaser-pro-internal/.github/workflows/release-pro.yml@refs/tags/__VERSION__-pro' \
+      --certificate-identity 'https://github.com/weyfonk/goreleaser-pro-internal/.github/workflows/release-pro.yml@refs/tags/__VERSION__-pro' \
       --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \
-      goreleaser/goreleaser-pro
+      weyfonk/goreleaser-pro
     ```
 
 !!! info
@@ -362,8 +362,8 @@ To do that, you'll need to execute something more-or-less like the examples belo
 
     Registries:
 
-    - [`goreleaser/goreleaser`](https://hub.docker.com/r/goreleaser/goreleaser)
-    - [`ghcr.io/goreleaser/goreleaser`](https://github.com/goreleaser/goreleaser/pkgs/container/goreleaser)
+    - [`weyfonk/goreleaser`](https://hub.docker.com/r/weyfonk/goreleaser)
+    - [`ghcr.io/weyfonk/goreleaser`](https://github.com/weyfonk/goreleaser/pkgs/container/goreleaser)
 
     Example usage:
 
@@ -376,15 +376,15 @@ To do that, you'll need to execute something more-or-less like the examples belo
       -e DOCKER_USERNAME \
       -e DOCKER_PASSWORD \
       -e DOCKER_REGISTRY \
-      goreleaser/goreleaser release
+      weyfonk/goreleaser release
     ```
 
 === "Pro"
 
     Registries:
 
-    - [`goreleaser/goreleaser-pro`](https://hub.docker.com/r/goreleaser/goreleaser-pro)
-    - [`ghcr.io/goreleaser/goreleaser-pro`](https://github.com/goreleaser/goreleaser/pkgs/container/goreleaser-pro)
+    - [`weyfonk/goreleaser-pro`](https://hub.docker.com/r/weyfonk/goreleaser-pro)
+    - [`ghcr.io/weyfonk/goreleaser-pro`](https://github.com/weyfonk/goreleaser/pkgs/container/goreleaser-pro)
 
     Example usage:
 
@@ -398,7 +398,7 @@ To do that, you'll need to execute something more-or-less like the examples belo
       -e DOCKER_PASSWORD \
       -e DOCKER_REGISTRY \
       -e GORELEASER_KEY \
-      goreleaser/goreleaser-pro release
+      weyfonk/goreleaser-pro release
     ```
 
 !!! info
@@ -415,11 +415,11 @@ If you need more things, you are encouraged to keep your own image. You can
 always use GoReleaser's [own Dockerfile][dockerfile] as an example though
 and iterate from that.
 
-[dockerfile]: https://github.com/goreleaser/goreleaser/blob/main/Dockerfile
-[releases]: https://github.com/goreleaser/goreleaser/releases
-[pro-releases]: https://github.com/goreleaser/goreleaser-pro/releases
-[nightly-pro-releases]: https://github.com/goreleaser/goreleaser-pro/releases/nightly
-[nightly-releases]: https://github.com/goreleaser/goreleaser/releases/nightly
+[dockerfile]: https://github.com/weyfonk/goreleaser/blob/main/Dockerfile
+[releases]: https://github.com/weyfonk/goreleaser/releases
+[pro-releases]: https://github.com/weyfonk/goreleaser-pro/releases
+[nightly-pro-releases]: https://github.com/weyfonk/goreleaser-pro/releases/nightly
+[nightly-releases]: https://github.com/weyfonk/goreleaser/releases/nightly
 [cosign]: https://github.com/sigstore/cosign
 
 ## Packaging status
@@ -438,7 +438,7 @@ If you just want to build from source for whatever reason, follow these steps:
 **clone:**
 
 ```bash
-git clone https://github.com/goreleaser/goreleaser
+git clone https://github.com/weyfonk/goreleaser
 cd goreleaser
 ```
 

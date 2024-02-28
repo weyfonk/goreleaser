@@ -12,16 +12,16 @@ import (
 	"strings"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/gio"
-	"github.com/goreleaser/goreleaser/internal/ids"
-	"github.com/goreleaser/goreleaser/internal/pipe"
-	"github.com/goreleaser/goreleaser/internal/semerrgroup"
-	"github.com/goreleaser/goreleaser/internal/skips"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/internal/yaml"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/artifact"
+	"github.com/weyfonk/goreleaser/internal/gio"
+	"github.com/weyfonk/goreleaser/internal/ids"
+	"github.com/weyfonk/goreleaser/internal/pipe"
+	"github.com/weyfonk/goreleaser/internal/semerrgroup"
+	"github.com/weyfonk/goreleaser/internal/skips"
+	"github.com/weyfonk/goreleaser/internal/tmpl"
+	"github.com/weyfonk/goreleaser/internal/yaml"
+	"github.com/weyfonk/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/pkg/context"
 )
 
 const releasesExtra = "releases"
@@ -335,7 +335,7 @@ func create(ctx *context.Context, snap config.Snapcraft, arch string, binaries [
 		}
 
 		// TODO: test that the correct binary is used in Command
-		// See https://github.com/goreleaser/goreleaser/pull/1449
+		// See https://github.com/weyfonk/goreleaser/pull/1449
 		appMetadata := AppMetadata{
 			Command: strings.TrimSpace(strings.Join([]string{
 				command,

@@ -5,8 +5,8 @@ import (
 
 	"github.com/caarlos0/log"
 	"github.com/docker/go-units"
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/artifact"
+	"github.com/weyfonk/goreleaser/pkg/context"
 )
 
 type Pipe struct{}

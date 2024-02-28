@@ -132,7 +132,7 @@ You're welcome to contribute. 😄
 The `nix-prefetch-url` binary must be available in the `$PATH` for the
 publishing to work.
 
-[iss4034]: https://github.com/goreleaser/goreleaser/issues/4034
+[iss4034]: https://github.com/weyfonk/goreleaser/issues/4034
 
 ### GitHub Actions
 

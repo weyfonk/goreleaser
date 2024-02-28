@@ -3,9 +3,9 @@ package defaults
 import (
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/testlib"
-	"github.com/goreleaser/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/internal/testlib"
+	"github.com/weyfonk/goreleaser/pkg/config"
 	"github.com/stretchr/testify/require"
 )
 
@@ -16,7 +16,7 @@ func TestDescription(t *testing.T) {
 func TestFillBasicData(t *testing.T) {
 	testlib.Mktmp(t)
 	testlib.GitInit(t)
-	testlib.GitRemoteAdd(t, "git@github.com:goreleaser/goreleaser.git")
+	testlib.GitRemoteAdd(t, "git@github.com:weyfonk/goreleaser.git")
 	ctx := testctx.New(testctx.GitHubTokenType)
 	require.NoError(t, Pipe{}.Run(ctx))
 	require.Equal(t, "goreleaser", ctx.Config.Release.GitHub.Owner)
@@ -40,7 +40,7 @@ func TestFillBasicData(t *testing.T) {
 func TestFillPartial(t *testing.T) {
 	testlib.Mktmp(t)
 	testlib.GitInit(t)
-	testlib.GitRemoteAdd(t, "git@github.com:goreleaser/goreleaser.git")
+	testlib.GitRemoteAdd(t, "git@github.com:weyfonk/goreleaser.git")
 
 	ctx := testctx.NewWithCfg(config.Project{
 		GitHubURLs: config.GitHubURLs{

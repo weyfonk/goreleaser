@@ -30,7 +30,7 @@ Here are ways to get in touch with the GoReleaser community:
 
 [![Join Discord](https://img.shields.io/badge/Join_our_Discord_server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/RGEBtg8vQ6)
 [![Follow Twitter](https://img.shields.io/badge/follow_on_twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/goreleaser)
-[![GitHub Discussions](https://img.shields.io/badge/GITHUB_DISCUSSION-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/goreleaser/goreleaser/discussions)
+[![GitHub Discussions](https://img.shields.io/badge/GITHUB_DISCUSSION-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/weyfonk/goreleaser/discussions)
 
 You can find the links above and all others [here](https://goreleaser.com/links/).
 
@@ -43,12 +43,12 @@ Please refer to our [contributing guidelines](CONTRIBUTING.md) for further infor
 
 ## Badges
 
-[![Release](https://img.shields.io/github/release/goreleaser/goreleaser.svg?style=for-the-badge)](https://github.com/goreleaser/goreleaser/releases/latest)
+[![Release](https://img.shields.io/github/release/weyfonk/goreleaser.svg?style=for-the-badge)](https://github.com/weyfonk/goreleaser/releases/latest)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge)](/LICENSE.md)
-[![Build status](https://img.shields.io/github/actions/workflow/status/goreleaser/goreleaser/build.yml?style=for-the-badge&branch=main)](https://github.com/goreleaser/goreleaser/actions?workflow=build)
-[![Codecov branch](https://img.shields.io/codecov/c/github/goreleaser/goreleaser/main.svg?style=for-the-badge)](https://codecov.io/gh/goreleaser/goreleaser)
+[![Build status](https://img.shields.io/github/actions/workflow/status/weyfonk/goreleaser/build.yml?style=for-the-badge&branch=main)](https://github.com/weyfonk/goreleaser/actions?workflow=build)
+[![Codecov branch](https://img.shields.io/codecov/c/github/weyfonk/goreleaser/main.svg?style=for-the-badge)](https://codecov.io/gh/weyfonk/goreleaser)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/goreleaser&style=for-the-badge)](https://artifacthub.io/packages/search?repo=goreleaser)
-[![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg?style=for-the-badge)](http://godoc.org/github.com/goreleaser/goreleaser)
+[![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg?style=for-the-badge)](http://godoc.org/github.com/weyfonk/goreleaser)
 [![Powered By: GoReleaser](https://img.shields.io/badge/powered%20by-goreleaser-green.svg?style=for-the-badge)](https://github.com/goreleaser)
 [![Backers on Open Collective](https://opencollective.com/goreleaser/backers/badge.svg?style=for-the-badge)](https://opencollective.com/goreleaser/backers/)
 [![Sponsors on Open Collective](https://opencollective.com/goreleaser/sponsors/badge.svg?style=for-the-badge)](https://opencollective.com/goreleaser/sponsors/)
@@ -59,7 +59,7 @@ Please refer to our [contributing guidelines](CONTRIBUTING.md) for further infor
 
 High-tier sponsors of [@caarlos0](https://github.com/sponsors/caarlos0/) on GitHub:
 
-<a href="https://smallstep.com" target="_blank"><img width="200" src="https://github.com/goreleaser/goreleaser/assets/245435/05ade839-6652-474a-af90-da3ea67dde24"></a>
+<a href="https://smallstep.com" target="_blank"><img width="200" src="https://github.com/weyfonk/goreleaser/assets/245435/05ade839-6652-474a-af90-da3ea67dde24"></a>
 
 ## OpenCollective
 
@@ -123,7 +123,7 @@ Love our work and community? [Become a backer](https://opencollective.com/gorele
 ### Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/goreleaser/goreleaser/graphs/contributors"><img src="https://opencollective.com/goreleaser/contributors.svg?width=890" /></a>
+<a href="https://github.com/weyfonk/goreleaser/graphs/contributors"><img src="https://opencollective.com/goreleaser/contributors.svg?width=890" /></a>
 
 ## Stargazers over time
-[![Stargazers over time](https://starchart.cc/goreleaser/goreleaser.svg?variant=adaptive)](https://starchart.cc/goreleaser/goreleaser)
+[![Stargazers over time](https://starchart.cc/weyfonk/goreleaser.svg?variant=adaptive)](https://starchart.cc/weyfonk/goreleaser)

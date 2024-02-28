@@ -15,16 +15,16 @@ GoReleaser 1.6 is out! Another "boring" release with some miscellaneous improvem
 
 ## **Highlights**
 
-- New `filter` and `reverseFilter` template functions ([#2924](https://github.com/goreleaser/goreleaser/pull/2924))
-- nFPM and archiving in `tar.gz` should now be faster ([#2940](https://github.com/goreleaser/goreleaser/pull/2940), [#2941](https://github.com/goreleaser/goreleaser/pull/2941))
-- More Snapcraft app metadata fields ([#2955](https://github.com/goreleaser/goreleaser/pull/2955))
-- New `.TagBody` template field ([#2923](https://github.com/goreleaser/goreleaser/pull/2923))
-- Install `amd64` binaries when no `arm64` binaries are present on macOS (i.e. use Rosetta) ([#2939](https://github.com/goreleaser/goreleaser/pull/2939))
+- New `filter` and `reverseFilter` template functions ([#2924](https://github.com/weyfonk/goreleaser/pull/2924))
+- nFPM and archiving in `tar.gz` should now be faster ([#2940](https://github.com/weyfonk/goreleaser/pull/2940), [#2941](https://github.com/weyfonk/goreleaser/pull/2941))
+- More Snapcraft app metadata fields ([#2955](https://github.com/weyfonk/goreleaser/pull/2955))
+- New `.TagBody` template field ([#2923](https://github.com/weyfonk/goreleaser/pull/2923))
+- Install `amd64` binaries when no `arm64` binaries are present on macOS (i.e. use Rosetta) ([#2939](https://github.com/weyfonk/goreleaser/pull/2939))
 - Several dependency updates
 - Several bug fixes
 - Some documentation improvements
 
-You can see the full changelog [here](https://github.com/goreleaser/goreleaser/releases/tag/v1.6.0).
+You can see the full changelog [here](https://github.com/weyfonk/goreleaser/releases/tag/v1.6.0).
 
 ## **Other news**
 

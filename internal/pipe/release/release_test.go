@@ -6,12 +6,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/client"
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/testlib"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/artifact"
+	"github.com/weyfonk/goreleaser/internal/client"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/internal/testlib"
+	"github.com/weyfonk/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/pkg/context"
 	"github.com/stretchr/testify/require"
 )
 
@@ -340,7 +340,7 @@ func TestRunPipeUploadRetry(t *testing.T) {
 func TestDefault(t *testing.T) {
 	testlib.Mktmp(t)
 	testlib.GitInit(t)
-	testlib.GitRemoteAdd(t, "git@github.com:goreleaser/goreleaser.git")
+	testlib.GitRemoteAdd(t, "git@github.com:weyfonk/goreleaser.git")
 
 	ctx := testctx.NewWithCfg(
 		config.Project{
@@ -354,7 +354,7 @@ func TestDefault(t *testing.T) {
 	require.NoError(t, Pipe{}.Default(ctx))
 	require.Equal(t, "goreleaser", ctx.Config.Release.GitHub.Name)
 	require.Equal(t, "goreleaser", ctx.Config.Release.GitHub.Owner)
-	require.Equal(t, "https://github.com/goreleaser/goreleaser/releases/tag/v1.0.0", ctx.ReleaseURL)
+	require.Equal(t, "https://github.com/weyfonk/goreleaser/releases/tag/v1.0.0", ctx.ReleaseURL)
 }
 
 func TestDefaultInvalidURL(t *testing.T) {
@@ -448,7 +448,7 @@ func TestDefaultWithGiteaInvalidURL(t *testing.T) {
 func TestDefaultPreRelease(t *testing.T) {
 	testlib.Mktmp(t)
 	testlib.GitInit(t)
-	testlib.GitRemoteAdd(t, "git@github.com:goreleaser/goreleaser.git")
+	testlib.GitRemoteAdd(t, "git@github.com:weyfonk/goreleaser.git")
 
 	t.Run("prerelease", func(t *testing.T) {
 		ctx := testctx.NewWithCfg(config.Project{
@@ -531,7 +531,7 @@ func TestDefaultPreRelease(t *testing.T) {
 func TestDefaultPipeDisabled(t *testing.T) {
 	testlib.Mktmp(t)
 	testlib.GitInit(t)
-	testlib.GitRemoteAdd(t, "git@github.com:goreleaser/goreleaser.git")
+	testlib.GitRemoteAdd(t, "git@github.com:weyfonk/goreleaser.git")
 
 	ctx := testctx.NewWithCfg(config.Project{
 		Release: config.Release{
@@ -547,7 +547,7 @@ func TestDefaultPipeDisabled(t *testing.T) {
 func TestDefaultFilled(t *testing.T) {
 	testlib.Mktmp(t)
 	testlib.GitInit(t)
-	testlib.GitRemoteAdd(t, "git@github.com:goreleaser/goreleaser.git")
+	testlib.GitRemoteAdd(t, "git@github.com:weyfonk/goreleaser.git")
 
 	ctx := testctx.NewWithCfg(config.Project{
 		Release: config.Release{

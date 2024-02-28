@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/testlib"
-	"github.com/goreleaser/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/internal/testlib"
+	"github.com/weyfonk/goreleaser/pkg/config"
 	"github.com/stretchr/testify/require"
 )
 
@@ -17,7 +17,7 @@ func TestRun(t *testing.T) {
 	ctx := testctx.New()
 	require.NoError(t, Pipe{}.Default(ctx))
 	require.NoError(t, Pipe{}.Run(ctx))
-	require.Equal(t, "github.com/goreleaser/goreleaser", ctx.ModulePath)
+	require.Equal(t, "github.com/weyfonk/goreleaser", ctx.ModulePath)
 }
 
 func TestRunGoWork(t *testing.T) {
@@ -55,7 +55,7 @@ func TestRunCustomMod(t *testing.T) {
 	})
 	require.NoError(t, Pipe{}.Default(ctx))
 	require.NoError(t, Pipe{}.Run(ctx))
-	require.Equal(t, "github.com/goreleaser/goreleaser", ctx.ModulePath)
+	require.Equal(t, "github.com/weyfonk/goreleaser", ctx.ModulePath)
 }
 
 func TestCustomEnv(t *testing.T) {

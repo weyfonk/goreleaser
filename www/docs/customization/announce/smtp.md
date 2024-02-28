@@ -40,7 +40,7 @@ announce:
     #
     # Default: 'You can view details from: {{ .ReleaseURL }}'
     # Templates: allowed
-    body_template: 'https://github.com/goreleaser/goreleaser/releases/tag/{{ .Tag }}'
+    body_template: 'https://github.com/weyfonk/goreleaser/releases/tag/{{ .Tag }}'
 
     # Subject template to use within the email subject.
     #

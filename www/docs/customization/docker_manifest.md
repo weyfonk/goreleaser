@@ -16,7 +16,7 @@ the Docker images names.
     Notice that the images used in the manifest **need to be pushed** for this
     to work. This is a limitation of how `docker manifest create` works. For
     more info, check
-    [this issue](https://github.com/goreleaser/goreleaser/issues/2606).
+    [this issue](https://github.com/weyfonk/goreleaser/issues/2606).
 
 ## Customization
 

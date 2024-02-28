@@ -15,13 +15,13 @@ The title would have been more creative if it was GoReleaser 1.18 as well... may
 
 ## **Highlights**
 
-- Go 1.18 update ([#2978](https://github.com/goreleaser/goreleaser/pull/2978), [#2984](https://github.com/goreleaser/goreleaser/pull/2984))
-- Ability to filter by file extension in HTTP uploads ([#2992](https://github.com/goreleaser/goreleaser/pull/2992))
-- Homebrew tap service block ([#2973](https://github.com/goreleaser/goreleaser/pull/2973))
-- Deprecated buildpacks support ([#2982](https://github.com/goreleaser/goreleaser/pull/2982)), and removed some deprecated code/etc that have been deprecated for 6 months+ ([#2985](https://github.com/goreleaser/goreleaser/pull/2985))
+- Go 1.18 update ([#2978](https://github.com/weyfonk/goreleaser/pull/2978), [#2984](https://github.com/weyfonk/goreleaser/pull/2984))
+- Ability to filter by file extension in HTTP uploads ([#2992](https://github.com/weyfonk/goreleaser/pull/2992))
+- Homebrew tap service block ([#2973](https://github.com/weyfonk/goreleaser/pull/2973))
+- Deprecated buildpacks support ([#2982](https://github.com/weyfonk/goreleaser/pull/2982)), and removed some deprecated code/etc that have been deprecated for 6 months+ ([#2985](https://github.com/weyfonk/goreleaser/pull/2985))
 - As always, some dependency upgrades, bug fixes and documentation improvements.
 
-You can see the full changelog [here](https://github.com/goreleaser/goreleaser/releases/tag/v1.7.0).
+You can see the full changelog [here](https://github.com/weyfonk/goreleaser/releases/tag/v1.7.0).
 
 ## **Other news**
 

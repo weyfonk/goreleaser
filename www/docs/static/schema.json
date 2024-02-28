@@ -1,6 +1,6 @@
 {
 		"$schema": "https://json-schema.org/draft/2020-12/schema",
-		"$id": "https://github.com/goreleaser/goreleaser/pkg/config/project",
+		"$id": "https://github.com/weyfonk/goreleaser/pkg/config/project",
 		"$ref": "#/$defs/Project",
 		"$defs": {
 			"AUR": {
@@ -959,7 +959,7 @@
 					},
 					{
 						"$schema": "https://json-schema.org/draft/2020-12/schema",
-						"$id": "https://github.com/goreleaser/goreleaser/pkg/config/file-alias",
+						"$id": "https://github.com/weyfonk/goreleaser/pkg/config/file-alias",
 						"$defs": {
 							"FileInfo": {
 								"properties": {
@@ -1001,7 +1001,7 @@
 			},
 			"FileInfo": {
 				"$schema": "https://json-schema.org/draft/2020-12/schema",
-				"$id": "https://github.com/goreleaser/goreleaser/pkg/config/file-info",
+				"$id": "https://github.com/weyfonk/goreleaser/pkg/config/file-info",
 				"$ref": "#/$defs/FileInfo",
 				"$defs": {
 					"FileInfo": {
@@ -1307,7 +1307,7 @@
 					},
 					{
 						"$schema": "https://json-schema.org/draft/2020-12/schema",
-						"$id": "https://github.com/goreleaser/goreleaser/pkg/config/homebrew-dependency",
+						"$id": "https://github.com/weyfonk/goreleaser/pkg/config/homebrew-dependency",
 						"properties": {
 							"name": {
 								"type": "string"
@@ -1339,14 +1339,14 @@
 					{
 						"items": {
 							"$schema": "https://json-schema.org/draft/2020-12/schema",
-							"$id": "https://github.com/goreleaser/goreleaser/pkg/config/hook",
+							"$id": "https://github.com/weyfonk/goreleaser/pkg/config/hook",
 							"oneOf": [
 								{
 									"type": "string"
 								},
 								{
 									"$schema": "https://json-schema.org/draft/2020-12/schema",
-									"$id": "https://github.com/goreleaser/goreleaser/pkg/config/hook-alias",
+									"$id": "https://github.com/weyfonk/goreleaser/pkg/config/hook-alias",
 									"properties": {
 										"dir": {
 											"type": "string"
@@ -2153,7 +2153,7 @@
 					},
 					{
 						"$schema": "https://json-schema.org/draft/2020-12/schema",
-						"$id": "https://github.com/goreleaser/goreleaser/pkg/config/nix-dependency-alias",
+						"$id": "https://github.com/weyfonk/goreleaser/pkg/config/nix-dependency-alias",
 						"properties": {
 							"name": {
 								"type": "string"
@@ -2504,7 +2504,7 @@
 					},
 					{
 						"$schema": "https://json-schema.org/draft/2020-12/schema",
-						"$id": "https://github.com/goreleaser/goreleaser/pkg/config/pull-request-base",
+						"$id": "https://github.com/weyfonk/goreleaser/pkg/config/pull-request-base",
 						"properties": {
 							"owner": {
 								"type": "string"

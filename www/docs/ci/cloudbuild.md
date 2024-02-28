@@ -48,7 +48,7 @@ steps:
   args: ['env']
 
 # Create github release.
-- name: goreleaser/goreleaser
+- name: weyfonk/goreleaser
   entrypoint: /bin/sh
   dir: gopath/src/github.com
   env: ['GOPATH=/workspace/gopath']

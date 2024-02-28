@@ -48,7 +48,7 @@ and many [more](https://github.com/slsa-framework/slsa-github-generator/tree/mai
 
 Without much further ado, let's jump right into the demo and see how we can use the slsa-github-generator to generate SLSA provenance for our artifacts.
 
-> You can find all the code used in this demo in the [goreleaser-example-slsa-provenance](https://github.com/goreleaser/goreleaser-example-slsa-provenance) repository on GitHub.
+> You can find all the code used in this demo in the [goreleaser-example-slsa-provenance](https://github.com/weyfonk/goreleaser-example-slsa-provenance) repository on GitHub.
 
 We said artifacts a lot, but what are artifacts really? In the context of this blog post, artifacts are the binaries and the container images that GoReleaser generates for your project. If you are familiar enough with GoReleaser _-if you are not please refer to the [Quick Start](https://goreleaser.com/quick-start/) guide-_, GoReleaser uses a configuration file called `.goreleaser.yml` to define how to build and release your project. In this file, you can define the artifacts that you want to generate for your project.
 
@@ -65,7 +65,7 @@ builds:
       - darwin
 
 kos:
-  - repository: ghcr.io/goreleaser/goreleaser-example-slsa-provenance
+  - repository: ghcr.io/weyfonk/goreleaser-example-slsa-provenance
     tags:
       - "{{.Tag}}"
       - "{{ if not .Prerelease }}latest{{ end }}"
@@ -80,7 +80,7 @@ kos:
       - -s -w
 ```
 
-I trimmed the file a bit to make it easier to read. As you can see, we are building our binaries for the `linux`, `windows`, and `darwin` operating systems as we defined in the `builds` section, thanks to the built-in cross-compliation support in Golang. We are also using the [kos](https://goreleaser.com/customization/ko/) integration to build a container image for our project. It is a new way to build container images your project using [ko](https://ko.build). We are also using the `ghcr.io/goreleaser/goreleaser-example-slsa-provenance` repository to push our container image both with the `latest` and the `{{.Tag}}` tag.
+I trimmed the file a bit to make it easier to read. As you can see, we are building our binaries for the `linux`, `windows`, and `darwin` operating systems as we defined in the `builds` section, thanks to the built-in cross-compliation support in Golang. We are also using the [kos](https://goreleaser.com/customization/ko/) integration to build a container image for our project. It is a new way to build container images your project using [ko](https://ko.build). We are also using the `ghcr.io/weyfonk/goreleaser-example-slsa-provenance` repository to push our container image both with the `latest` and the `{{.Tag}}` tag.
 
 > _If you want to learn more about the ko tool, check out our [blog post](https://blog.kubesimplify.com/getting-started-with-ko-a-fast-container-image-builder-for-your-go-applications/)._
 
@@ -178,7 +178,7 @@ jobs:
 ...
 ```
 
-For the `Generate binary hashes` step, we are using the `jq` tool to parse the `artifacts` output which is one of the outputs of the [goreleaser/goreleaser-action](https://github.com/goreleaser/goreleaser-action) from the `goreleaser` job and extract the checksum file path. We are then using the `base64` tool to encode the checksum file and save it to the `hashes` output.
+For the `Generate binary hashes` step, we are using the `jq` tool to parse the `artifacts` output which is one of the outputs of the [weyfonk/goreleaser-action](https://github.com/weyfonk/goreleaser-action) from the `goreleaser` job and extract the checksum file path. We are then using the `base64` tool to encode the checksum file and save it to the `hashes` output.
 
 In essence, the artifacts output consists of the contents of the artifacts.json file that GoReleaser generates in the dist/ folder, starting from version 1.2, as explained in this v1.2 release. This file contains information regarding the artifacts produced by GoReleaser.
 

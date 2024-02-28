@@ -9,11 +9,11 @@ import (
 	"testing"
 
 	"code.gitea.io/sdk/gitea"
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/weyfonk/goreleaser/internal/artifact"
+	"github.com/weyfonk/goreleaser/internal/testctx"
+	"github.com/weyfonk/goreleaser/internal/tmpl"
+	"github.com/weyfonk/goreleaser/pkg/config"
+	"github.com/weyfonk/goreleaser/pkg/context"
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
@@ -175,7 +175,7 @@ func (s *GiteaReleasesTestSuite) SetupTest() {
 			CurrentTag:  s.tag,
 			Commit:      s.commit,
 			ShortCommit: s.commit[0:2],
-			URL:         "https://gitea.com/goreleaser/goreleaser.git",
+			URL:         "https://gitea.com/weyfonk/goreleaser.git",
 		}),
 		func(ctx *context.Context) {
 			ctx.PreRelease = s.isPrerelease

@@ -15,7 +15,7 @@ Here is how to set up a basic release pipeline with [Woodpecker](https://woodpec
 ```yaml
 pipeline:
   release:
-    image: goreleaser/goreleaser
+    image: weyfonk/goreleaser
     commands:
       - goreleaser release
     secrets: [ gitea_token ]

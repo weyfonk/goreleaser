@@ -25,7 +25,7 @@ announce:
     #
     # Default: '{{ .ReleaseURL }}'
     # Templates: allowed
-    url_template: 'https://github.com/goreleaser/goreleaser/releases/tag/{{ .Tag }}'
+    url_template: 'https://github.com/weyfonk/goreleaser/releases/tag/{{ .Tag }}'
 
     # Title template to use while publishing.
     #
