@@ -3,6 +3,7 @@ package docker
 import (
 	"fmt"
 	"regexp"
+	"strings"
 
 	"github.com/goreleaser/goreleaser/pkg/context"
 )
@@ -73,9 +74,18 @@ func (i dockerImager) Build(ctx *context.Context, root string, images, flags []s
 func (i dockerImager) buildCommand(images, flags []string) []string {
 	base := []string{"build", "."}
 	if i.buildx {
-		base = []string{"buildx", "build", ".", "--load"}
+		//base = []string{"buildx", "build", ".", "--load"}
+		base = []string{"buildx", "build", "."}
 	}
 	for _, image := range images {
+		// FIXME this is very hacky and needs tests; we should probably check the build platform flag instead of the image name
+		if strings.Contains(image, "windows") {
+			// Push Windows images directly
+			base = append(base, "--push")
+		} else {
+			base = append(base, "--load")
+		}
+
 		base = append(base, "-t", image)
 	}
 	base = append(base, flags...)
