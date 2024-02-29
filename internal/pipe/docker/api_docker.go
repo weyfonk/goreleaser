@@ -79,10 +79,8 @@ func (i dockerImager) buildCommand(images, flags []string) []string {
 	}
 	for _, image := range images {
 		// FIXME this is very hacky and needs tests; we should probably check the build platform flag instead of the image name
-		if strings.Contains(image, "windows") {
-			// Push Windows images directly
-			base = append(base, "--push")
-		} else {
+		if !strings.Contains(image, "windows") {
+			// Do not load Windows images, which causes errors
 			base = append(base, "--load")
 		}
 
